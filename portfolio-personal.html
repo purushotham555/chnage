@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>start</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio-personal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&family=Architects+Daughter&family=Cormorant+Garamond:wght@300&family=Dancing+Script&family=EB+Garamond:ital@1&family=Open+Sans+Condensed:wght@300&family=Sacramento&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js" integrity="sha512-zKaK6G2LZC5YZTX0vKmD7xOwd1zrEEMal4zlTf5Ved/A1RrnW+qt8pWDfo7oz+xeChECS/P9dv6EDwwPwelFfQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="pre-loader-bg" id="loader-bg-id">
+        <div class="loader" id="loader-id">
+            <img src="https://i.gifer.com/7YRI.gif">
+            <h5>wait few seconds<span class='dot'></span></h5>
+        </div>
+    </div>
+    <section class="first-section">
+        <div class="container">
+            <h1 class="textTyper"></h1>
+            <a href="portfoilo-personal-1.html" class="button">start</a>
+        </div>
+
+
+
+        <div class="videos" style="display:none;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XZ_khM33DSA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XZ_khM33DSA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XZ_khM33DSA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GvvMNwNhZDY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NCjf6og4qHk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+        var typed = new Typed('.textTyper', {
+            strings: ['welcome to my world', 'This is <span style="color:white;">purushotham</span>', 'press <span style="color:hotpink;">start</span> to join with me'],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true,
+        })
+    </script>
+
+    <script>
+        var typed = new Typed('.dot', {
+            strings: ['..........'],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
+        })
+    </script>
+    <script>
+        var loading = document.getElementById('loader-bg-id');
+        window.addEventListener("load", function() {
+            loading.style.display = "none";
+        })
+    </script>
+</body>
+
+</html>

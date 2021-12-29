@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=0️, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var i = 0;
+    var images = [];
+    var time = 3000;
+    /*----adding images-*/
+    images[0] = "file:///home/arjun/Desktop/all/IMG-20211107-WA0006-01.jpeg";
+    images[1] = "file:///home/arjun/Desktop/photoes/WhatsApp%20Image%202021-10-29%20at%206.24.53%20AM%20(1).jpeg";
+
+    function changeImg() {
+
+        document.slide.src = images[i];
+        if (i < images.length - 1) {
+
+            i++;
+        } else {
+            i = 0;
+        }
+        setTimeout("changeImg()", time);
+    }
+    window.onload = changeImg;
+</script>
+<img name="slide" id="slid-img" width="399px" height="100%" style="position:absolute;top:0rem;left:50%;">
+
+</html>

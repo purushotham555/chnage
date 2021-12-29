@@ -1,0 +1,38 @@
+            * {
+                margin: 0%;
+                border: 0;
+            }
+            
+            .total {
+                background: rgb(255, 255, 207);
+                height: 100vh;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .total img {
+                height: 8cm;
+                width: 11cm;
+                position: relative;
+            }
+            
+            .total h5 {
+                position: absolute;
+                display: flex;
+                top: 65.2%;
+                left: 53.7%;
+                opacity: .79999;
+                text-transform: uppercase;
+                color: black;
+                letter-spacing: 2.5px;
+                font-size: 23.5px;
+                background: linear-gradient( to top, transparent, rgba(255, 225, 225, .7));
+                font-weight: 1000;
+                width: 38px;
+                backdrop-filter: blur(100);
+                -webkit-backdrop-filter: blur(100);
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden;
+            }

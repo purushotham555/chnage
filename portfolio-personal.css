@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+/*----------------------------------------------------------------------------
+            -------------------------------pre-loader-------------------------------------*/
+
+.pre-loader-bg {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: #000;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.loader img {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    left: 36%;
+    top: 30%;
+}
+
+.videos {
+    display: none;
+}
+
+.loader h5 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    left: 40%;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    top: 80%;
+}
+
+.loader h5 span {
+    color: white;
+    letter-spacing: 5px;
+    position: relative;
+    left: 1rem;
+    animation: dot-color .5s infinite;
+}
+
+@keyframes dot-color {
+    from {
+        color: white;
+    }
+    to {
+        color: black;
+    }
+}
+
+
+/*--------------------------------------------------------------------------------------------------------
+                        -----------------------------------------------------------pre-loader-animation-ended---------------------*/
+
+.first-section {
+    width: 100%;
+    height: 100vh;
+    animation: change 1.5s infinite;
+    position: relative;
+}
+
+.container {
+    height: 50vh;
+    width: 70%;
+    background: rgba(225, 225, 225, 0.2);
+    backface-visibility: hidden;
+    backdrop-filter: blur(10);
+    top: 20%;
+    left: 15%;
+    position: absolute;
+}
+
+@keyframes change {
+    from {
+        background-image: linear-gradient(to right top, #b593a3, #b69aba, #aaa5d3, #8fb3e7, #66c2f1, #49cdf3, #2bd7ef, #20e0e5, #33e8e0, #4bf0d9, #63f8d0, #7cffc7);
+    }
+    to {
+        background-image: linear-gradient(to right top, #0f2108, #003b2a, #005556, #006f89, #0085bc, #658ddb, #b18ee8, #f68ce0, #ff86b5, #ff977b, #ffbe3d, #f4e900);
+    }
+}
+
+.first-section h1 {
+    color: aqua;
+    text-shadow: 0px 10px 0px black;
+    font-size: 50px;
+    font-weight: 500;
+    position: absolute;
+    left: 1rem;
+    top: 20%;
+    letter-spacing: 10px;
+    font-family: 'Architects Daughter';
+}
+
+.button {
+    padding: 10px 50px;
+    position: relative;
+    top: 67%;
+    color: black;
+    left: 40%;
+    font-size: 20px;
+    font-weight: 900;
+    border: 1px solid black;
+    text-transform: capitalize;
+    font-family: 'Architects Daughter';
+    letter-spacing: 5px;
+    animation: button-change 1.5s infinite;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+@keyframes button-change {
+    from {
+        background-image: linear-gradient(to right top, #0f2108, #003b2a, #005556, #006f89, #0085bc, #658ddb, #b18ee8, #f68ce0, #ff86b5, #ff977b, #ffbe3d, #f4e900);
+        border: 1px solid black;
+        color: black;
+    }
+    to {
+        background-image: linear-gradient(to right top, #81ed57, #00e4a4, #00d2e7, #00b9ff, #0097ff, #028aef, #027dde, #0070ce, #0072b2, #00697a, #005b3c, #164a04);
+        border: 1px solid white;
+        color: white;
+    }
+}
+
+.button:hover {
+    background: white;
+    color: black;
+    cursor: pointer;
+    padding: 10px 70px;
+}
